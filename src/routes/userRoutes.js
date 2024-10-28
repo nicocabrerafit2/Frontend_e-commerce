@@ -1,6 +1,8 @@
+import { Router } from "express";
 import fetch from "node-fetch";
+const app = Router();
 
-app.get("/register", (req, res) => {
+app.get("/", (req, res) => {
   res.render("register");
 });
 app.post("/register", async (req, res) => {
@@ -12,3 +14,4 @@ app.post("/register", async (req, res) => {
   const data = await response.json();
   res.render("registerSuccess", { data });
 });
+export default app;
