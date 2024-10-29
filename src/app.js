@@ -10,6 +10,7 @@ import path from "node:path";
 const app = express();
 app.use(express.static("public"));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/", userRouter);
 //app.use("/products", productRouter);
 //app.use("/carts", cartRouter);
