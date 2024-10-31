@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffdb15;
+  padding: 10px 20px;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.location {
+  font-size: 14px;
+}
+
+.search-bar {
+  width: 400px;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.promo {
+  background-color: #6c1d45;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.account,
+.login,
+.purchases {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.cart {
+  height: 30px;
+}
